@@ -1,12 +1,12 @@
 import Title from '@/Components/Title';
 import React from 'react';
 
-const Dashboard = () => {
+const page = () => {
     return (
         <div>
-            right side dynamic content --children
+            <Title>Tutorials page</Title>
         </div>
     );
 };
 
-export default Dashboard;
+export default page;
