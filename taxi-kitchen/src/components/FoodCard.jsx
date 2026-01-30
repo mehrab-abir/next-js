@@ -1,17 +1,19 @@
 import Link from 'next/link';
 import React from 'react';
 import AddToCart from './buttons/AddToCart';
+import Image from 'next/image';
 
 const FoodCard = ({food}) => {
     const {id, title, foodImg, price, category} = food;
     return (
       <div className="max-w-sm rounded-2xl overflow-hidden bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
         {/* Image */}
-        <div className="h-48 w-full overflow-hidden">
-          <img
+        <div className="relative h-48 w-full overflow-hidden">
+          <Image
             src={foodImg}
             alt="Pear Tarte Tatin"
             className="h-full w-full object-cover hover:scale-105 transition-transform duration-300"
+            fill
           />
         </div>
 

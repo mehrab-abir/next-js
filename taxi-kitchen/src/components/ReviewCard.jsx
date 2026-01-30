@@ -1,14 +1,17 @@
+import Image from "next/image";
 
 const ReviewCard = ({ reviewData }) => {
-  const { user, photo, rating, review, likes, date } = reviewData || {};
+  const { user, rating, review, likes, date } = reviewData || {};
 
   return (
     <div className="bg-white rounded-2xl shadow-md p-5 space-y-4">
       {/* Header */}
       <div className="flex items-center gap-4">
-        <img
+        <Image
           src='/avatar.png'
           alt={user}
+          width={1}
+          height={1}
           className="w-12 h-12 rounded-full object-cover"
         />
 
